@@ -13,42 +13,20 @@ import React, { Component } from "react";
 
 const verticalAlignStyle = {
   margin: "0",
-  top: "50%",
-  left: "50%",
+  top: "30%",
+  left: "20%",
+  right: "20%",
+  position: "absolute",
   padding: "20px",
-  borderRadius: "5px"
+  borderRadius: "5px",
+  textAlign: "center"
 };
 const homepageMainTextStyle = {
   fontWeight: "bold",
   color: "#d94949",
   textShadow:
     "-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000",
-  fontSize: "44pt"
-};
-const homepageSubTextStyle = {
-  fontWeight: "bold",
-  color: "#d94949",
-  textShadow:
-    "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-  fontSize: "22pt"
-};
-
-const tableStyle = {
-  border: "3px solid",
-  textAlign: "left",
-  width: "80%",
-  backgroundColor: "#f6f6f6a1"
-};
-const outerTdStyle = {
-  width: "50%"
-};
-const tableStyleItem = {
-  textAlign: "left",
-  width: "80%"
-};
-const tableStylePrice = {
-  textAlign: "right",
-  fontWeight: "bold"
+  fontSize: "42pt"
 };
 
 class Home extends Component {
@@ -57,10 +35,9 @@ class Home extends Component {
     return (
       <center>
         <div style={verticalAlignStyle}>
-          <h1 style={homepageMainTextStyle}>Kirkland's Mediterranean</h1>
-          <h3 style={homepageSubTextStyle}>
-            Halal, Healthy, Simply Delicious.
-          </h3>
+          <h1 style={homepageMainTextStyle}>
+            Healthy, Halal, Simply Delicious.
+          </h1>
         </div>
       </center>
     );

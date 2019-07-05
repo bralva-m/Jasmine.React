@@ -2,10 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import $ from "jquery";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter } from "react-router-dom";
 
+const bootstrap = require("bootstrap");
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
+console.log(bootstrap);
 ReactDOM.render(
   <BrowserRouter>
     <App />
