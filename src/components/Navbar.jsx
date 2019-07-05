@@ -29,7 +29,7 @@ class Navbar extends Component {
           <h1>Jasmine Kitchen</h1>
         </NavLink>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler collapsed"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"

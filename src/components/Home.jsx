@@ -32,26 +32,37 @@ const homepageSubTextStyle = {
     "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
   fontSize: "22pt"
 };
+
+const tableStyle = {
+  border: "3px solid",
+  textAlign: "left",
+  width: "80%",
+  backgroundColor: "#f6f6f6a1"
+};
+const outerTdStyle = {
+  width: "50%"
+};
+const tableStyleItem = {
+  textAlign: "left",
+  width: "80%"
+};
+const tableStylePrice = {
+  textAlign: "right",
+  fontWeight: "bold"
+};
+
 class Home extends Component {
   state = {};
   render() {
     return (
-      <table className="table my-5 table-striped">
-        <tr>
-          <td>
-            <div style={verticalAlignStyle}>
-              <h1 style={homepageMainTextStyle}>Kirkland's Mediterranean</h1>
-              <h3 style={homepageSubTextStyle}>
-                Halal, Healthy, Simply Delicious.
-              </h3>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td />
-          <td />
-        </tr>
-      </table>
+      <center>
+        <div style={verticalAlignStyle}>
+          <h1 style={homepageMainTextStyle}>Kirkland's Mediterranean</h1>
+          <h3 style={homepageSubTextStyle}>
+            Halal, Healthy, Simply Delicious.
+          </h3>
+        </div>
+      </center>
     );
   }
 }
