@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import $ from "jquery";
+import { Link } from "react-router-dom";
 import Menu from "../../src/menu.pdf";
 const titleStyle = {
   fontFamily: "Kaushan Script",
@@ -15,6 +16,10 @@ const navBarStyle = {
 const navbarTogglerStyle = {
   backgroundColor: "#FFFFFF"
 };
+
+function collapseNavbar() {
+  $(".navbar-collapse").collapse("hide");
+}
 class Navbar extends Component {
   state = {};
   render() {
@@ -23,11 +28,16 @@ class Navbar extends Component {
         className="navbar navbar-expand-lg navbar-light bg-dark py-0"
         style={{ zIndex: "1" }}
       >
-        <NavLink style={titleStyle} className="px-2 navbar-brand" to="/">
+        <Link
+          style={titleStyle}
+          className="px-2 navbar-brand"
+          to="/"
+          onClick={collapseNavbar()}
+        >
           <h1>Jasmine Kitchen</h1>
-        </NavLink>
+        </Link>
         <button
-          className="navbar-toggler collapsed"
+          className="navbar-toggler "
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"
@@ -42,6 +52,29 @@ class Navbar extends Component {
           <center>
             <ul className="navbar-nav">
               <li className="nav-item active text-nowrap">
+                <Link className="nav-link" to="/" style={navBarStyle}>
+                  Home <span className="sr-only">(current)</span>
+                </Link>
+              </li>
+              <li
+                className="nav-item active text-nowrap"
+                onClick={collapseNavbar()}
+              >
+                <Link className="nav-link" to={"/gallery"} style={navBarStyle}>
+                  Gallery <span className="sr-only">(current)</span>
+                </Link>
+              </li>
+              <li className="nav-item active text-nowrap">
+                <Link className="nav-link" to="/about" style={navBarStyle}>
+                  About <span className="sr-only">(current)</span>
+                </Link>
+              </li>
+              <li className="nav-item active text-nowrap">
+                <Link className="nav-link" to="/contact" style={navBarStyle}>
+                  Contact <span className="sr-only">(current)</span>
+                </Link>
+              </li>{" "}
+              <li className="nav-item active text-nowrap">
                 <a
                   className="nav-link"
                   href={Menu}
@@ -50,17 +83,6 @@ class Navbar extends Component {
                 >
                   Menu <span className="sr-only">(current)</span>
                 </a>
-              </li>
-
-              <li className="nav-item active text-nowrap">
-                <NavLink className="nav-link" to="/about" style={navBarStyle}>
-                  About <span className="sr-only">(current)</span>
-                </NavLink>
-              </li>
-              <li className="nav-item active text-nowrap">
-                <NavLink className="nav-link" to="/contact" style={navBarStyle}>
-                  Contact <span className="sr-only">(current)</span>
-                </NavLink>
               </li>
               <li className="nav-item active text-nowrap">
                 <a

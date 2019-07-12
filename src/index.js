@@ -11,7 +11,6 @@ const bootstrap = require("bootstrap");
 window.jQuery = $;
 window.$ = $;
 global.jQuery = $;
-console.log(bootstrap);
 ReactDOM.render(
   <BrowserRouter>
     <App />

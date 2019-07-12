@@ -12,13 +12,16 @@ import React, { Component } from "react";
 };*/
 
 const verticalAlignStyle = {
-  margin: "0",
+  background: "rgba(255,255,255,0.8)",
+  marginLeft: "-5%",
+  marginRight: "-5%",
   top: "30%",
   left: "20%",
   right: "20%",
   position: "absolute",
   padding: "20px",
   borderRadius: "5px",
+  border: "1px solid black",
   textAlign: "center"
 };
 const homepageMainTextStyle = {
