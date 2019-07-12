@@ -9,9 +9,13 @@ import phoneIcon from "../../src/phone.png";
 const socialStyle = {
   backgroundColor: "#000000",
   color: "#FFFFFF",
-  textAlign: "right",
-  zIndex: "1"
+  textAlign: "center",
+  zIndex: "1",
+  display: "inline-block",
+  width: "100%",
+  content: ""
 };
+
 const linkStyle = { textDecoration: "None", color: "white" };
 class Social extends Component {
   state = {};
@@ -24,6 +28,7 @@ class Social extends Component {
             width="35"
             height="35"
             alt="Our Facebook page!"
+            className="mx-2"
           />
         </a>
         <a href="https://www.instagram.com" target="_">
@@ -32,6 +37,7 @@ class Social extends Component {
             width="35"
             height="35"
             alt="Our Instagram page!"
+            className="mx-2"
           />
         </a>
         <a
@@ -43,6 +49,7 @@ class Social extends Component {
             width="35"
             height="35"
             alt="Our TripAdvisor page!"
+            className="mx-2"
           />
         </a>
         <a href="https://www.yelp.com/biz/jasmine-kitchen-kirkland" target="_">
@@ -54,10 +61,17 @@ class Social extends Component {
             width="35"
             height="35"
             alt="Our Twitter page!"
+            className="mx-2"
           />
         </a>
         <a style={linkStyle} href="tel:4258208002">
-          <img src={phoneIcon} width="35" height="35" alt="425-820-8002" />
+          <img
+            src={phoneIcon}
+            width="35"
+            height="35"
+            alt="425-820-8002"
+            className="mx-2"
+          />
         </a>
         <a
           style={linkStyle}
@@ -69,6 +83,7 @@ class Social extends Component {
             width="35"
             height="35"
             alt="11613 124th Ave NE, Kirkland, WA"
+            className="mx-2"
           />
         </a>
       </div>

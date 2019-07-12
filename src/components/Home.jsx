@@ -15,7 +15,7 @@ const verticalAlignStyle = {
   background: "rgba(255,255,255,0.8)",
   marginLeft: "-5%",
   marginRight: "-5%",
-  top: "30%",
+  top: "20%",
   left: "20%",
   right: "20%",
   position: "absolute",
@@ -41,6 +41,10 @@ class Home extends Component {
           <h1 style={homepageMainTextStyle}>
             Healthy, Halal, Simply Delicious.
           </h1>
+          Opened in January 2016, Jasmine Kitchen serves food that represents
+          people from countries around the Mediteranean sea. It is a unique
+          restaurant that serves delicious, authentic mediteranean food and
+          drink.
         </div>
       </center>
     );

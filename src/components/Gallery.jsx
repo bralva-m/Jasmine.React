@@ -15,17 +15,34 @@ import _11 from "../photos/11.jpg";
 import _12 from "../photos/12.jpg";
 import _13 from "../photos/13.jpg";
 
-const carouselImageStyle = { maxWidth: "80%" };
+const carouselImageStyle = {
+  maxWidth: "80%",
+  maxHeight: "75vh",
+  border: "1px solid #0D0907"
+};
 const carouselStyle = {
-  marginTop: "2%",
-  marginBottom: "2%",
+  marginTop: "7vh",
+  marginBottom: "12vh",
   top: "30%"
 };
 const carouselTextStyle = {
   background: "rgba(0,0,0,0.7)",
   textAlight: "center"
 };
-
+const verticalAlignStyle = {
+  marginLeft: "-5%",
+  marginRight: "-5%",
+  borderRadius: "5px",
+  marginTop: "1%",
+  border: "0px solid black",
+  textAlign: "center"
+};
+const homepageMainTextStyle = {
+  fontWeight: "bold",
+  color: "#d94949",
+  textShadow:
+    "-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000"
+};
 class Gallery extends Component {
   state = {};
   render() {
@@ -46,6 +63,15 @@ class Gallery extends Component {
               />
               <li data-target="#carouselExampleCaptions" data-slide-to="1" />
               <li data-target="#carouselExampleCaptions" data-slide-to="2" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="3" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="4" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="5" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="6" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="7" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="8" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="9" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="10" />
+              <li data-target="#carouselExampleCaptions" data-slide-to="11" />
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -59,9 +85,10 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Second slide label</h5>
+                  <h5>Lamb Shawarma Plate</h5>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Classic Lamb Gyro slices with grilled onions and Tzatziki
+                    sauce, served with hummus, rice, pita bread, and salad.
                   </p>
                 </div>
               </div>
@@ -76,10 +103,10 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Half Chicken Plate</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Half chicken with rice /fries, 2 pitas, fries 1 garlic
+                    sauce.
                   </p>
                 </div>
               </div>
@@ -94,10 +121,11 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Beef & Lamb Gyro Sandwich</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Lamb & Beef Gyro, seared on a gas flame, wrapped with
+                    lettuce, tomatoes, onions, feta cheese, and traditional
+                    tzatziki sauce, in warm Greek flatbread.
                   </p>
                 </div>
               </div>
@@ -112,10 +140,11 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Beef & Lamb Gyro Plate</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Classic beef and Lamb Gyro slices with grilled onions and
+                    Tzatziki sauce, served with hummus, rice, pita bread, and
+                    salad.
                   </p>
                 </div>
               </div>
@@ -130,10 +159,11 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Beef & Lamb Gyro Salad</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Beef & lamb Gyro slices, lettuce, onions, tomatoes,
+                    cucumbers, olive oil, feta cheese, & Mediterranean
+                    vinaigrette
                   </p>
                 </div>
               </div>
@@ -148,10 +178,11 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Chicken Shawarma Salad</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Chicken Shawarma slices over lettuce, tomatoes, onions,
+                    cucumbers, virgin olive oil and spices, & Mediterranean
+                    vinaigrette.
                   </p>
                 </div>
               </div>
@@ -166,10 +197,10 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Greek Fries</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Delicious fries topped with house-made garlic sauce, feta
+                    cheese, olive oil, and sumac.
                   </p>
                 </div>
               </div>
@@ -184,7 +215,7 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Beef & Lamb Gyro aside some Greek Fries</h5>
                   <p>
                     Praesent commodo cursus magna, vel scelerisque nisl
                     consectetur.
@@ -202,10 +233,10 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Mediterranean Falafel Plate (Vegetarian)</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    Falafel pieces and Tahini sauce over rice, with hummus, pita
+                    bread, and salad.
                   </p>
                 </div>
               </div>
@@ -220,10 +251,11 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
+                  <h5>Classic Baklava</h5>
                   <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
+                    A delicious pastry dessert originating in the Middle East
+                    made from a thin, layered dough filled with chopped nuts and
+                    infused with honey.
                   </p>
                 </div>
               </div>
@@ -238,11 +270,8 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h5>Chocolate Roll Baklava</h5>
+                  <p>Baklava in roll form with a chocolate twist!</p>
                 </div>
               </div>
               <div className="carousel-item">
@@ -256,11 +285,8 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Third slide label</h5>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <h5>Pistachio Baklava</h5>
+                  <p>Baklava infused and sprinkled with pistachios</p>
                 </div>
               </div>
             </div>
@@ -283,6 +309,23 @@ class Gallery extends Component {
               <span className="sr-only">Next</span>
             </a>
           </div>
+          <a
+            href="https://www.tripadvisor.com/Restaurant_Review-g58541-d10023726-Reviews-Jasmine_Mediteranean_Kitchen-Kirkland_Washington.html"
+            target="_"
+          >
+            <img
+              src={tripAdvisorIcon}
+              width="80"
+              height="80"
+              alt="Our TripAdvisor page!"
+            />
+          </a>{" "}
+          <a
+            href="https://www.yelp.com/biz/jasmine-kitchen-kirkland"
+            target="_"
+          >
+            <img src={yelpIcon} width="80" height="80" alt="Our Yelp page!" />
+          </a>
         </center>
       </React.Fragment>
     );

@@ -5,6 +5,7 @@ import Social from "./components/Social";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 require("typeface-kaushan-script");
 

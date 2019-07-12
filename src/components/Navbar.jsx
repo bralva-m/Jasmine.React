@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import $ from "jquery";
 import { Link } from "react-router-dom";
 import Menu from "../../src/menu.pdf";
+
 const titleStyle = {
   fontFamily: "Kaushan Script",
   fontWeight: "bold",
@@ -62,11 +63,6 @@ class Navbar extends Component {
               >
                 <Link className="nav-link" to={"/gallery"} style={navBarStyle}>
                   Gallery <span className="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item active text-nowrap">
-                <Link className="nav-link" to="/about" style={navBarStyle}>
-                  About <span className="sr-only">(current)</span>
                 </Link>
               </li>
               <li className="nav-item active text-nowrap">
