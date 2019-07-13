@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import tripAdvisorIcon from "../../src/ta.png";
 import yelpIcon from "../../src/ye.png";
-//import _1 from "../photos/1.jpg";
+import _1 from "../photos/1.jpg";
 import _2 from "../photos/2.jpg";
 import _3 from "../photos/3.jpg";
 import _4 from "../photos/4.jpg";
@@ -13,36 +13,21 @@ import _9 from "../photos/9.jpg";
 import _10 from "../photos/10.jpg";
 import _11 from "../photos/11.jpg";
 import _12 from "../photos/12.jpg";
-import _13 from "../photos/13.jpg";
 
 const carouselImageStyle = {
-  maxWidth: "80%",
   maxHeight: "75vh",
-  border: "1px solid #0D0907"
+  objectFit: "contain"
 };
 const carouselStyle = {
-  marginTop: "7vh",
-  marginBottom: "12vh",
+  marginTop: "6vh",
+  marginBottom: "6vh",
   top: "30%"
 };
 const carouselTextStyle = {
   background: "rgba(0,0,0,0.7)",
   textAlight: "center"
 };
-const verticalAlignStyle = {
-  marginLeft: "-5%",
-  marginRight: "-5%",
-  borderRadius: "5px",
-  marginTop: "1%",
-  border: "0px solid black",
-  textAlign: "center"
-};
-const homepageMainTextStyle = {
-  fontWeight: "bold",
-  color: "#d94949",
-  textShadow:
-    "-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000"
-};
+
 class Gallery extends Component {
   state = {};
   render() {
@@ -56,11 +41,7 @@ class Gallery extends Component {
             style={carouselStyle}
           >
             <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExampleCaptions"
-                data-slide-to="0"
-                className="active"
-              />
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" />
               <li data-target="#carouselExampleCaptions" data-slide-to="1" />
               <li data-target="#carouselExampleCaptions" data-slide-to="2" />
               <li data-target="#carouselExampleCaptions" data-slide-to="3" />
@@ -76,7 +57,7 @@ class Gallery extends Component {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  src={_2}
+                  src={_1}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -94,7 +75,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_3}
+                  src={_2}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -112,7 +93,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_4}
+                  src={_3}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -131,7 +112,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_5}
+                  src={_4}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -150,7 +131,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_6}
+                  src={_5}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -169,7 +150,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_7}
+                  src={_6}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -188,7 +169,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_8}
+                  src={_7}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -206,7 +187,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_9}
+                  src={_8}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -224,7 +205,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_10}
+                  src={_9}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -242,7 +223,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_11}
+                  src={_10}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -261,7 +242,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_12}
+                  src={_11}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -276,7 +257,7 @@ class Gallery extends Component {
               </div>
               <div className="carousel-item">
                 <img
-                  src={_13}
+                  src={_12}
                   className="d-block w-100"
                   alt="..."
                   style={carouselImageStyle}
@@ -285,8 +266,8 @@ class Gallery extends Component {
                   className="carousel-caption d-none d-md-block"
                   style={carouselTextStyle}
                 >
-                  <h5>Pistachio Baklava</h5>
-                  <p>Baklava infused and sprinkled with pistachios</p>
+                  <h5>Chocolate Roll Baklava</h5>
+                  <p>Baklava in roll form with a chocolate twist!</p>
                 </div>
               </div>
             </div>
@@ -326,6 +307,9 @@ class Gallery extends Component {
           >
             <img src={yelpIcon} width="80" height="80" alt="Our Yelp page!" />
           </a>
+          <p className="font-weight-bold">
+            More images on Yelp and TripAdvisor!
+          </p>
         </center>
       </React.Fragment>
     );

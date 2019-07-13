@@ -1,0 +1,5 @@
+Gallery pics are stretched out
+Home page is lacking
+Build out contact page
+Build out dynamic menu
+Title page "Jasmine" is too big on some devices, pushes hamburger menu to next line

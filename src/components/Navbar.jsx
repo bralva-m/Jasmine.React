@@ -15,7 +15,10 @@ const navBarStyle = {
 };
 
 const navbarTogglerStyle = {
-  backgroundColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF",
+  position: "absolute",
+  right: "13px",
+  top: "13px"
 };
 
 function collapseNavbar() {
@@ -27,16 +30,18 @@ class Navbar extends Component {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-light bg-dark py-0"
-        style={{ zIndex: "1" }}
+        style={{ zIndex: "1", whiteSpace: "nowrap" }}
       >
-        <Link
-          style={titleStyle}
-          className="px-2 navbar-brand"
-          to="/"
-          onClick={collapseNavbar()}
-        >
-          <h1>Jasmine Kitchen</h1>
-        </Link>
+        <div>
+          <Link
+            style={titleStyle}
+            className="px-2 navbar-brand"
+            to="/"
+            onClick={collapseNavbar()}
+          >
+            <h1>Jasmine Kitchen</h1>
+          </Link>
+        </div>
         <button
           className="navbar-toggler "
           type="button"
@@ -71,12 +76,7 @@ class Navbar extends Component {
                 </Link>
               </li>{" "}
               <li className="nav-item active text-nowrap">
-                <a
-                  className="nav-link"
-                  href={Menu}
-                  style={navBarStyle}
-                  target="_"
-                >
+                <a className="nav-link" href={Menu} style={navBarStyle}>
                   Menu <span className="sr-only">(current)</span>
                 </a>
               </li>
@@ -85,7 +85,6 @@ class Navbar extends Component {
                   className="nav-link"
                   href="https://www.ezcater.com/catering/pvt/jasmine-kitchen-1"
                   style={navBarStyle}
-                  target="_"
                 >
                   Catering <span className="sr-only">(current)</span>
                 </a>
@@ -95,7 +94,6 @@ class Navbar extends Component {
                   className="nav-link"
                   href="https://ordering.chownow.com/order/8192/locations#"
                   style={navBarStyle}
-                  target="_"
                 >
                   Order
                 </a>

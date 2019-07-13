@@ -29,7 +29,7 @@ const homepageMainTextStyle = {
   color: "#d94949",
   textShadow:
     "-1px -1px 0 #000, 2px -1px 0 #000, -1px 2px 0 #000, 2px 2px 0 #000",
-  fontSize: "42pt"
+  fontSize: "36pt"
 };
 
 class Home extends Component {

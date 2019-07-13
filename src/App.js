@@ -5,7 +5,7 @@ import Social from "./components/Social";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Gallery from "./components/Gallery";
-import About from "./components/About";
+import Contact from "./components/Contact";
 
 require("typeface-kaushan-script");
 
@@ -20,6 +20,9 @@ function App() {
         </Route>
         <Route path="/gallery">
           <Route component={Gallery} />
+        </Route>
+        <Route path="/contact">
+          <Route component={Contact} />
         </Route>
       </Switch>
     </div>
